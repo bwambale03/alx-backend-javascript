@@ -1,4 +1,4 @@
-class Currency{
+export default class Currency{
     /**
      * @param @see {@link Currency} iunstance hase been created
      * @param {*} code - currency code
@@ -54,4 +54,3 @@ class Currency{
     }
 
 }
-export default Currency;    
