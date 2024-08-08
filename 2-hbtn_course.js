@@ -1,69 +1,71 @@
 /**
- * representation of a holberton course
+ * Represents a Holberton Course.
  */
-class HolbertonCourse{
-
-/**
- * creates a new @see {@link HolbertonCourse}
- * 
- * @param {name} name - the height of an individual
- * @param {length} length - how long te cours is (in months)
- * @param {students} students - the length of students in the course
- */
-
-    constructor(name, length, students){
-        this._name = name
-        this._length = length
-        this._students= students
-    }
-
+export default class HolbertonCourse {
+  /**
+   * Creates a new @see {@link HolbertonCourse}.
+   *
+   * @param {String} name - The name of the course.
+   * @param {Number} length - How long the course is (in months).
+   * @param {String[]} students - The names of students in the course.
+   */
+  constructor(name, length, students) {
+    this.name = name;
+    this.length = length;
+    this.students = students;
+  }
 
   /**
    * Gets the name of this course.
    */
-  get name(){
+  get name() {
     return this._name;
   }
 
   /**
-   * sets te name of this course
+   * Sets the name of this course.
    */
-  set name(value){
-    if (typeof value != String){
-        throw new TypeError('value must be a string')
+  set name(value) {
+    if (typeof value !== 'string') {
+      throw new TypeError('Name must be a string');
     }
-    return this._name
-  }
-  get length(){
-    return this._length
+    this._name = value;
   }
 
   /**
-   * sets the length of this course in (months)
+   * Gets the length of this course (in months).
    */
-  set length(value){
-    if (typeof value != Number){
-        throw new TypeError('value must be a number!')
-    }
-    this._value  
-  }
-  /**
-   * gets the names of students
-   */
-  get students(){
-    return this._students 
-  }
-  /**
-   * gets the name of the student in this course
-   */
-  set students(value){
-    if(!value instanceof Array){
-        throw new TypeError('students must be an Array of Strings!')
-    }
-    if(!value.every((student)=> typeof student === 'string')){
-        throw new TypeError('students must be an array of strings')
-    }
-    this._students = value
+  get length() {
+    return this._length;
   }
 
+  /**
+   * Sets the length of this course (in months).
+   */
+  set length(value) {
+    if (typeof value !== 'number') {
+      throw new TypeError('Length must be a number');
+    }
+    this._length = value;
+  }
+
+  /**
+   * Gets the names of students in this course.
+   */
+  get students() {
+    return this._students;
+  }
+
+  /**
+   * Sets the names of students in this course.
+   */
+  set students(value) {
+    if (!(value instanceof Array)) {
+      throw new TypeError('Students must be an array of strings');
+    }
+    if (!value.every((student) => typeof student === 'string')) {
+      throw new TypeError('Students must be an array of strings');
+    }
+    this._students = value;
+  }
 }
