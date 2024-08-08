@@ -1,10 +1,10 @@
 import ClassRoom from "./0-classroom.js";
 
-export default function initializeRooms(){
-    
-        const size1 = new ClassRoom(19)
-        const size2 = new ClassRoom(20)
-        const size3 = new ClassRoom(34)
-    return {size1, size2, size3}
+/**
+ * Creates an array of {@link ClassRoom}s with a specific size.
+ * @returns An array of {@link ClassRoom}s.
+ */
 
+export default function initializeRooms(){
+    return [19,20,34].map((size)=> new ClassRoom(size));
 }
