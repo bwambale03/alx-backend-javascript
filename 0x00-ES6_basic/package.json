@@ -9,11 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.0.0",
-    "babel-jest": "^29.0.0",
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
-    "eslint": "^8.0.0"
+    "babel-jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0"
+  },
+  "dependencies": {
+    "lint": "^0.8.19"
   }
 }
-  

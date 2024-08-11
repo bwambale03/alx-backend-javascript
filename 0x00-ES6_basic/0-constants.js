@@ -1,3 +1,5 @@
+// 0-constants.js
+
 export function taskFirst() {
     const task = 'I prefer const when I can.';
     return task;
@@ -9,8 +11,7 @@ export function taskFirst() {
   
   export function taskNext() {
     let combination = 'But sometimes let';
-    combination += getLast();
-  
+    combination += getLast();  // Appends ' is okay' to 'But sometimes let'
     return combination;
   }
   
