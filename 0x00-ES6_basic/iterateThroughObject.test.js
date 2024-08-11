@@ -19,7 +19,7 @@ describe('iterateThroughObject', ()=>{
         const employees = {
             allEmployees: {
                 engineering: ['John Doe', 'Guillaume Salva'],
-                design: ['Kanye East', 'Jaay Li']
+                design: ['Kanye East', 'Jay Li']
             }
         };
 
