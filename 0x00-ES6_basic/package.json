@@ -5,11 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "dev": "node 0-main.js",
-    "start": "node 0-main.js"
+    "run": "node run.js",
+    "test": "jest"
   },
-  "author": "",
+  "author": "kambale",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.0",
