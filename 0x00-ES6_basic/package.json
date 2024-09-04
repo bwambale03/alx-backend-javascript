@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "run": "node run.js",
-    "test": "jest"
+    "dev": "node run.js",
+    "test": "jest"	
   },
   "author": "kambale",
   "license": "ISC",
