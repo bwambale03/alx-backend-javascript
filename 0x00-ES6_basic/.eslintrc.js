@@ -13,6 +13,8 @@ module.exports = {
     },
     rules: {
       // Add your custom rules here
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"]
     },
   };
   
