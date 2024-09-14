@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "node run.js",
     "test": "jest"
   },
   "author": "kambale",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencie": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "babel-jest": "^29.0.0",
