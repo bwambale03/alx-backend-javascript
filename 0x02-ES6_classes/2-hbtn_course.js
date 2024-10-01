@@ -40,4 +40,3 @@ class HolbertonCourse {
 }
 
 module.exports = HolbertonCourse;
-
