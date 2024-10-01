@@ -27,6 +27,7 @@ To get started with this project, you need to have Node.js installed on your mac
 ```bash
 git clone https://github.com/YOUR_USERNAME/alx-backend-javascript.git
 cd alx-backend-javascript/0x02-ES6_classes
+npm install
 
 
 ## Usage
