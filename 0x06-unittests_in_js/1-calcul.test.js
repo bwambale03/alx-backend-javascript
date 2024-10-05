@@ -6,6 +6,7 @@ describe('calculateNumber', () => {
     assert.equal(calculateNumber('SUM', 1.3, 1.2), 3);
     assert.equal(calculateNumber('SUM', 1.5, 1.5), 4);
     assert.equal(calculateNumber('SUM', 1.7, 0), 2);
+    assert.equal(calculateNumber('SUM', 1.2, 1.8), 4);
   });
 
   it('should return the difference of rounded numbers', () => {
